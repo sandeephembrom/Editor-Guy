@@ -40,6 +40,8 @@
 
 <body>
 
+  <div id="preloader"></div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container">
@@ -374,7 +376,14 @@
   backspeed:0,
   // backDelay: 700,
   loop:true,
-});
+  });
+  </script>
+
+  <script>
+
+    $(window).on("load",function(){
+      $("#preloader").fadeOut("slow");
+    })
   </script>
 
 </body>
